@@ -9,6 +9,8 @@ public class CNSButils extends JavaPlugin {
     public void onEnable(){
         // on plugin enable
         Bukkit.getServer().getLogger().info("CNSB Utilities Enabled");
+
+        this.getCommand("sbutil-version").setExecutor(new CommandSBVersion(this));
     }
     public void onDisable(){
         // on plugin disable
