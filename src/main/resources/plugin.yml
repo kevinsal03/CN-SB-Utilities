@@ -3,10 +3,14 @@ main: me.kevsal.minecraft.cnsbutils.CNSButils
 version: 1.0-SNAPSHOT
 author: Kevinsal03
 description: A general plugin that supports many of the core features on ClubSkyblock.
+depend:
+  - Vault
+  - LuckPerms
 commands:
   cnsb-version:
     description: Version command
     permission: cnsb.version
+    aliases: [cnsb-ver, sbutil-version, sbutil-ver]
 
 permissions:
   cnsb.version:
