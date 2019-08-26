@@ -27,6 +27,6 @@ public class CommandSBVersion implements CommandExecutor {
             sender.sendMessage("Must be a player.");
         }
 
-        return false;
+        return true;
     }
 }

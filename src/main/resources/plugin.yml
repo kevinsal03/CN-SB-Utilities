@@ -11,7 +11,13 @@ commands:
     description: Version command
     permission: cnsb.version
     aliases: [cnsb-ver, sbutil-version, sbutil-ver]
+    usage: /<command>
+  sbtest-baltake:
+    permission: cnsb.test
+    usage: /sbtest-baltake <INT NOT NULL>
 
 permissions:
   cnsb.version:
+    default: op
+  cnsb.test:
     default: op
